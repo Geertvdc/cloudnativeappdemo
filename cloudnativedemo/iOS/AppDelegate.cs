@@ -13,7 +13,7 @@ namespace CloudNativeDemo.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            Xamarin.FormsMaps.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyD7r2gaub59nVyD-9pY4ugWKm00AKbERLg");
 
             LoadApplication(new App());
 

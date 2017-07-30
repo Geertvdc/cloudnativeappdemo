@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:CloudNativeDemo"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="CloudNativeDemo.CloudNativeDemoPage">
-	<maps:Map x:Name="Map"
-            IsShowingUser="true"
-            MapType="Hybrid"
+	<maps:Map x:Name="Map" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"            IsShowingUser="true"
+            MapType="Hybrid" MapClicked="Handle_MapClicked"
         />
 </ContentPage>

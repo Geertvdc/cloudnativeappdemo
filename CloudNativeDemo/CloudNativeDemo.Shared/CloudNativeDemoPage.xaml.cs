@@ -1,5 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Microsoft.Azure.Documents;
+using Microsoft.Azure.Documents.Client;
 
 namespace CloudNativeDemo
 {
@@ -15,5 +17,6 @@ namespace CloudNativeDemo
         {
             InitializeComponent();
         }
+
     }
 }

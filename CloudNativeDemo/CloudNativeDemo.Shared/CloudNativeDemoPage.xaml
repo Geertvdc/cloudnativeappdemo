@@ -4,7 +4,9 @@
              xmlns:local="clr-namespace:CloudNativeDemo"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="CloudNativeDemo.CloudNativeDemoPage">
-	<maps:Map x:Name="Map" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"            IsShowingUser="true"
-            MapType="Hybrid" MapClicked="Handle_MapClicked"
-        />
+    <StackLayout Margin="0,50,0,0">
+        <Button Text="retrieve PoIs" Clicked="Handle_Clicked" BackgroundColor="Silver"/>
+    	<maps:Map x:Name="Map" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"            IsShowingUser="true"
+                MapType="Hybrid" MapClicked="Handle_MapClicked"/>   
+    </StackLayout>
 </ContentPage>

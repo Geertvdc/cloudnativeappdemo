@@ -47,5 +47,13 @@ namespace CloudNativeDemo
             }
 		}
 
+        void Handle_PinClicked(object sender, System.EventArgs e)
+        {
+            
+            Pin pin = ((PinClickedEventArgs)e).Pin;
+            DescriptionLabel.Text = pin.Label;
+
+        }
+
     }
 }

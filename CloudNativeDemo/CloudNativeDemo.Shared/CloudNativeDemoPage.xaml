@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:CloudNativeDemo"
              xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
-             x:Class="CloudNativeDemo.CloudNativeDemoPage">
-    <StackLayout Margin="0,50,0,0">
+             x:Class="CloudNativeDemo.CloudNativeDemoPage" BackgroundColor="White">
+    <StackLayout Margin="0,30,0,0">
         <Button Text="retrieve PoIs" Clicked="Handle_Clicked" BackgroundColor="Silver"/>
+        <Label x:Name="DescriptionLabel" Text="Click on the map to place a pin or click a pin for details" TextColor="Black"/>
     	<maps:Map x:Name="Map" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"            IsShowingUser="true"
-                MapType="Hybrid" MapClicked="Handle_MapClicked"/>   
+                MapType="Hybrid" MapClicked="Handle_MapClicked" PinClicked="Handle_PinClicked"/>   
     </StackLayout>
 </ContentPage>
